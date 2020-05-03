@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="GodelTech.Microservices.Core" Version="1.0.2" />
-    <PackageReference Include="GodelTech.Microservices.EntityFrameworkCore" Version="1.0.1" />
+    <PackageReference Include="GodelTech.Microservices.EntityFrameworkCore" Version="1.0.2" />
     <PackageReference Include="GodelTech.Microservices.Swagger" Version="1.0.2" />
   </ItemGroup>
 
