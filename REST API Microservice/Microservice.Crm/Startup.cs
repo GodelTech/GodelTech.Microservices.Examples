@@ -1,15 +1,14 @@
 ﻿using System.Collections.Generic;
 using GodelTech.Microservices.Core;
+using GodelTech.Microservices.EntityFrameworkCore;
 using GodelTech.Microservices.Swagger;
+using Microservice.Crm.DataLayer;
 using Microsoft.Extensions.Configuration;
 
 namespace Microservice.Crm
 {
     public sealed class Startup : MicroserviceStartup
     {
-        private const string ReadIntent = "r";
-        private const string ManageIntent = "m";
-
         public static class Scopes
         {
             public const string ClientsRead = "clients.read";
@@ -35,7 +34,7 @@ namespace Microservice.Crm
             }
 
             yield return new SwaggerInitializer(Configuration);
-            //yield return new EntityFrameworkInitializer<AnalyzerDbContext>(Configuration);
+            yield return new EntityFrameworkInitializer<CrmDbContext>(Configuration);
         }
     }
 }
