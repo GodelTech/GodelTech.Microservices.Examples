@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using GodelTech.Microservices.Core.Mvc.Swagger;
+using GodelTech.Microservices.Swagger.Swagger;
 using Microservice.Crm.v1.Contracts.Documents;
 using Microservice.Crm.v1.Contracts.Requests;
 using Microsoft.AspNetCore.Authorization;
@@ -15,8 +15,8 @@ namespace Microservice.Crm.v1.Controllers
     [ApiController]
     public class ClientController : ControllerBase
     {
-        [Authorize(Startup.Policies.JobsManage)]
-        [SwaggerRequiredScopes(Startup.Scopes.JobsManage)]
+        [Authorize(Startup.Policies.ClientsManage)]
+        [SwaggerRequiredScopes(Startup.Scopes.ClientsManage)]
         [HttpPost]
         [ProducesResponseType(typeof(ClientDocument), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(IDictionary<string, string>), StatusCodes.Status400BadRequest)]
@@ -32,8 +32,8 @@ namespace Microservice.Crm.v1.Controllers
                 new ClientDocument());
         }
 
-        [Authorize(Startup.Policies.JobsRead)]
-        [SwaggerRequiredScopes(Startup.Scopes.JobsRead)]
+        [Authorize(Startup.Policies.ClientsRead)]
+        [SwaggerRequiredScopes(Startup.Scopes.ClientsRead)]
         [HttpGet("{activityId}")]
         [ProducesResponseType(typeof(ClientDocument), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(IDictionary<string, string>), StatusCodes.Status404NotFound)]

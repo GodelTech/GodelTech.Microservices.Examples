@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GodelTech.Microservices.Core" Version="1.0.0" />
+    <PackageReference Include="GodelTech.Microservices.Core" Version="1.0.2" />
+    <PackageReference Include="GodelTech.Microservices.EntityFrameworkCore" Version="1.0.0" />
+    <PackageReference Include="GodelTech.Microservices.Swagger" Version="1.0.2" />
   </ItemGroup>
 
 </Project>
