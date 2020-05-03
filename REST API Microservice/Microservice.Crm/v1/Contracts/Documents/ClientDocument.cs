@@ -7,5 +7,6 @@ namespace Microservice.Crm.v1.Contracts.Documents
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime CreatedAt { get; set; }
+        public int Id { get; set; }
     }
 }
