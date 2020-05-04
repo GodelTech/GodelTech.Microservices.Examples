@@ -7,6 +7,7 @@ using GodelTech.Microservices.Core.Services;
 using GodelTech.Microservices.EntityFrameworkCore;
 using GodelTech.Microservices.Swagger;
 using Microservice.Crm.DataLayer;
+using Microservice.Crm.v1;
 using Microsoft.Extensions.Configuration;
 
 namespace Microservice.Crm
@@ -30,6 +31,7 @@ namespace Microservice.Crm
 
             yield return new SwaggerInitializer(Configuration);
             yield return new EntityFrameworkInitializer<CrmDbContext>(Configuration);
+            yield return new RestApiInitializer(Configuration);
         }
     }
 }

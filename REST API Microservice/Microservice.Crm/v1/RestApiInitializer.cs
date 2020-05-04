@@ -15,7 +15,7 @@ namespace Microservice.Crm.v1
         public override void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<ICreateCommand, CreateCommand>();
-            services.AddTransient<IGetCommand, IGetCommand>();
+            services.AddTransient<IGetCommand, GetCommand>();
         }
     }
 }
