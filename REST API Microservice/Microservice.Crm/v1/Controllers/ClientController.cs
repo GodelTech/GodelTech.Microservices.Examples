@@ -25,8 +25,7 @@ namespace Microservice.Crm.v1.Controllers
             _createCommand = createCommand ?? throw new ArgumentNullException(nameof(createCommand));
         }
 
-        [Authorize(Startup.Policies.ClientsManage)]
-        [SwaggerRequiredScopes(Startup.Scopes.ClientsManage)]
+        [SwaggerRequiredScopes("Scope1")]
         [HttpPost]
         [ProducesResponseType(typeof(ClientDocument), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(IDictionary<string, string>), StatusCodes.Status400BadRequest)]
@@ -42,8 +41,7 @@ namespace Microservice.Crm.v1.Controllers
                 document);
         }
 
-        [Authorize(Startup.Policies.ClientsRead)]
-        [SwaggerRequiredScopes(Startup.Scopes.ClientsRead)]
+        [SwaggerRequiredScopes("Scope1")]
         [HttpGet("{id}")]
         [ProducesResponseType(typeof(ClientDocument), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(IDictionary<string, string>), StatusCodes.Status404NotFound)]
