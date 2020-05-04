@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Autofac.Extensions.DependencyInjection;
-using GodelTech.Microservices.Core;
 using GodelTech.Microservices.Core.Utils;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
