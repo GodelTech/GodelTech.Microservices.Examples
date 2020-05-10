@@ -18,7 +18,7 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
     <PackageReference Include="Serilog.Sinks.Elasticsearch" Version="8.1.0" />
 
-    <PackageReference Include="GodelTech.Microservices.Core" Version="1.0.5" />
+    <PackageReference Include="GodelTech.Microservices.Core" Version="1.0.6" />
     <PackageReference Include="GodelTech.Microservices.EntityFrameworkCore" Version="1.0.3" />
     <PackageReference Include="GodelTech.Microservices.Swagger" Version="1.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">

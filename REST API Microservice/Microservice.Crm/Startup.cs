@@ -9,6 +9,7 @@ using GodelTech.Microservices.Swagger;
 using GodelTech.Microservices.Swagger.Configuration;
 using Microservice.Crm.DataLayer;
 using Microservice.Crm.v1;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 
 namespace Microservice.Crm
@@ -26,9 +27,9 @@ namespace Microservice.Crm
             yield return new CollaboratorsInitializer(Configuration);
             //yield return new CommonMiddlewareInitializer(Configuration);
 
-            yield return new RoutingInitializer(Configuration);
+            yield return new GenericInitializer((app, env) => app.UseRouting());
             yield return new HealthCheckInitializer(Configuration);
-            yield return new MvcInitializer(Configuration);
+            yield return new ApiInitializer(Configuration);
 
             yield return new SwaggerInitializer(Configuration)
             {
