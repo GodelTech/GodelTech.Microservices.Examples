@@ -5,6 +5,7 @@ using GodelTech.Microservices.Core.HealthChecks;
 using GodelTech.Microservices.Core.Mvc;
 using GodelTech.Microservices.Core.Services;
 using GodelTech.Microservices.EntityFrameworkCore;
+using GodelTech.Microservices.SharedServices;
 using GodelTech.Microservices.Swagger;
 using GodelTech.Microservices.Swagger.Configuration;
 using Microservice.Crm.DataLayer;
@@ -24,6 +25,8 @@ namespace Microservice.Crm
         protected override IEnumerable<IMicroserviceInitializer> CreateInitializers()
         {
             yield return new CommonServicesInitializer(Configuration);
+            yield return new SharedServicesInitializer(Configuration);
+
             yield return new CollaboratorsInitializer(Configuration);
             //yield return new CommonMiddlewareInitializer(Configuration);
 
