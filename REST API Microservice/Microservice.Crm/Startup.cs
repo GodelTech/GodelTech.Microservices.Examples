@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using GodelTech.Microservices.Core;
-using GodelTech.Microservices.Core.Collaborators;
 using GodelTech.Microservices.Core.HealthChecks;
 using GodelTech.Microservices.Core.Mvc;
 using GodelTech.Microservices.Core.Services;
 using GodelTech.Microservices.EntityFrameworkCore;
+using GodelTech.Microservices.Http;
 using GodelTech.Microservices.SharedServices;
 using GodelTech.Microservices.Swagger;
 using GodelTech.Microservices.Swagger.Configuration;
@@ -27,8 +27,8 @@ namespace Microservice.Crm
             yield return new CommonServicesInitializer(Configuration);
             yield return new SharedServicesInitializer(Configuration);
 
-            yield return new CollaboratorsInitializer(Configuration);
-            //yield return new CommonMiddlewareInitializer(Configuration);
+            yield return new ServiceClientInitializer(Configuration);
+            yield return new CommonMiddlewareInitializer(Configuration);
 
             yield return new GenericInitializer((app, env) => app.UseRouting());
             yield return new HealthCheckInitializer(Configuration);
