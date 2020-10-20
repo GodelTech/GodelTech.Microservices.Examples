@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GodelTech.Microservices.WebAndApiCollaboration.Api", "src\GodelTech.Microservices.WebAndApiCollaboration.Api\GodelTech.Microservices.WebAndApiCollaboration.Api.csproj", "{49387DEA-DB22-47AE-917E-7266A56E9D75}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GodelTech.Microservices.WebAndApiCollaboration.Web", "src\GodelTech.Microservices.WebAndUiCollaboration.Web\GodelTech.Microservices.WebAndApiCollaboration.Web.csproj", "{E6C21DD6-D109-4B63-B781-9431F22F64EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GodelTech.Microservices.WebAndApiCollaboration.IdentityServer", "src\GodelTech.Microservices.WebAndApiCollaboration.IdentityServer\GodelTech.Microservices.WebAndApiCollaboration.IdentityServer.csproj", "{1F5C8A99-2621-45CB-B683-DA7744C5C969}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GodelTech.Microservices.WebAndApiCollaboration.Api.UnitTests", "tests\GodelTech.Microservices.WebAndApiCollaboration.Api.UnitTests\GodelTech.Microservices.WebAndApiCollaboration.Api.UnitTests.csproj", "{811F1AF7-2E1C-4958-8909-B2DCF0AF8330}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GodelTech.Microservices.WebAndApiCollaboration.IdentityServer.UnitTests", "tests\GodelTech.Microservices.WebAndApiCollaboration.IdentityServer.UnitTests\GodelTech.Microservices.WebAndApiCollaboration.IdentityServer.UnitTests.csproj", "{A7855E41-ACFD-4330-A0FA-2C7B7E7E5E59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GodelTech.Microservices.WebAndApiCollaboration.Web.UnitTests", "tests\GodelTech.Microservices.WebAndUiCollaboration.Web.UnitTests\GodelTech.Microservices.WebAndApiCollaboration.Web.UnitTests.csproj", "{C66F1239-9819-45EB-9B40-53FBE16FA207}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GodelTech.Microservices.WebAndApiCollaboration.Api.IntegrationTests", "tests\GodelTech.Microservices.WebAndApiCollaboration.Api.IntegrationTests\GodelTech.Microservices.WebAndApiCollaboration.Api.IntegrationTests.csproj", "{8050299F-9F16-4C74-B884-101E30E5E09C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GodelTech.Microservices.WebAndApiCollaboration.Common.IntegrationTests", "tests\GodelTech.Microservices.WebAndApiCollaboration.Common.IntegrationTests\GodelTech.Microservices.WebAndApiCollaboration.Common.IntegrationTests.csproj", "{4CEB0EB3-9F4D-48F5-AFF0-98C20218C741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodelTech.Microservices.WebAndApiCollaboration.Web.IntegrationTests", "tests\GodelTech.Microservices.WebAndApiCollaboration.Web.IntegrationTests\GodelTech.Microservices.WebAndApiCollaboration.Web.IntegrationTests.csproj", "{60107154-45F6-4A41-84F9-6564A56D911A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49387DEA-DB22-47AE-917E-7266A56E9D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49387DEA-DB22-47AE-917E-7266A56E9D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49387DEA-DB22-47AE-917E-7266A56E9D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49387DEA-DB22-47AE-917E-7266A56E9D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C21DD6-D109-4B63-B781-9431F22F64EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C21DD6-D109-4B63-B781-9431F22F64EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C21DD6-D109-4B63-B781-9431F22F64EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C21DD6-D109-4B63-B781-9431F22F64EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5C8A99-2621-45CB-B683-DA7744C5C969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5C8A99-2621-45CB-B683-DA7744C5C969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5C8A99-2621-45CB-B683-DA7744C5C969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5C8A99-2621-45CB-B683-DA7744C5C969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811F1AF7-2E1C-4958-8909-B2DCF0AF8330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811F1AF7-2E1C-4958-8909-B2DCF0AF8330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811F1AF7-2E1C-4958-8909-B2DCF0AF8330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811F1AF7-2E1C-4958-8909-B2DCF0AF8330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7855E41-ACFD-4330-A0FA-2C7B7E7E5E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7855E41-ACFD-4330-A0FA-2C7B7E7E5E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7855E41-ACFD-4330-A0FA-2C7B7E7E5E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7855E41-ACFD-4330-A0FA-2C7B7E7E5E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C66F1239-9819-45EB-9B40-53FBE16FA207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66F1239-9819-45EB-9B40-53FBE16FA207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66F1239-9819-45EB-9B40-53FBE16FA207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66F1239-9819-45EB-9B40-53FBE16FA207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8050299F-9F16-4C74-B884-101E30E5E09C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8050299F-9F16-4C74-B884-101E30E5E09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8050299F-9F16-4C74-B884-101E30E5E09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8050299F-9F16-4C74-B884-101E30E5E09C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CEB0EB3-9F4D-48F5-AFF0-98C20218C741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CEB0EB3-9F4D-48F5-AFF0-98C20218C741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CEB0EB3-9F4D-48F5-AFF0-98C20218C741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CEB0EB3-9F4D-48F5-AFF0-98C20218C741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60107154-45F6-4A41-84F9-6564A56D911A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60107154-45F6-4A41-84F9-6564A56D911A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60107154-45F6-4A41-84F9-6564A56D911A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60107154-45F6-4A41-84F9-6564A56D911A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C761F2F-054D-4A07-A12F-6B1E5D7282C5}
+	EndGlobalSection
+EndGlobal
