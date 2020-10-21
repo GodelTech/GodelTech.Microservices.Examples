@@ -69,7 +69,6 @@ namespace GodelTech.Microservices.WebAndApiCollaboration.IdentityServer.UnitTest
             await _testSubject.OnGet(LogoutId);
 
             // Assert
-            // Assert
             _authenticationService
                 .Verify(
                     x => x.SignOutAsync(
