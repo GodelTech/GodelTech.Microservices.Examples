@@ -35,7 +35,7 @@ Steps to reproduce use case:
 - click on "Protected Resources" button
 - you should see "Protected resource" on the page
 
-#### Use case 2
+### Use case 2
 
 Given unauthenticated user
 When ask for protected api resources
