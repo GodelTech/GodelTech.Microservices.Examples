@@ -58,7 +58,7 @@ They are configured in appSettings.json file (please see [GodelTech.Microservice
 After authentication process for user and authorization process for client successfully finished identity server sent jwt token to client.
 Jwt is stored and added into api calls for authorization.
 
-## GodelTech.Microservices.WebAndApiCollaboration.IdentityServer
+## Microservice.Identity
 
 This is server which is responsible for authentication and authorization process.
 [Identity server 4 framework](https://github.com/IdentityServer/IdentityServer4) is used to implement "OpemId" protocol.
@@ -66,7 +66,7 @@ This is server which is responsible for authentication and authorization process
 Identity server was setup only for example purpose and has all configuration for clients and scopes into appsettings.json file.
 Also authentication process does not need names or passwords to simplify authentication process.
 
-## GodelTech.Microservices.WebAndApiCollaboration.Api
+## Microservice.Api
 
 This is protected api server which has one protected endpoint.
 
