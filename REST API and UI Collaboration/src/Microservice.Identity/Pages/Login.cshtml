@@ -1,0 +1,12 @@
+﻿@page "/Account/Login"
+@model Microservices.IdentityServer.Pages.LoginModel
+@{
+}
+
+<div style="text-align: center">
+    <form style="display: inline-block" method="post">
+        <input type="hidden" asp-for="ReturnUrl" />
+        <input asp-page-handler="Login" type="submit" value="Login" />
+        <input asp-page-handler="Cancel" type="submit" value="Cancel" />
+    </form>
+</div>
