@@ -12,20 +12,21 @@ All these parts is based on **GodelTech.Microservice.Framework**.
 
 Expected use case for this application is the web application that interacts with protected resources on behalf of authenticated user.
 
-## GodelTech.Microservices.WebAndApiCollaboration.Web
+## Microservice.UI
 
 This is the client which performs Api calls on behalf of users.
 
 There are two main use cases in this application to show authentication and authorization processes.
 
-Use case 1:
+### Use case 1
+
 Given authenticated user and authorized client
 When ask for protected api resources
 Then protected resources is available
 
 Steps to reproduce use case:
 
-- open web client home page
+- open web client home page [https://localhost:44303](https://localhost:44303)
 - if you are not authenticated click on "Login" button in the upper left corner
 - if you have already authenticated click on "Logout" button in the upper left corner and repeat step 2
 - you will be redirected into identity server for authentication process
@@ -34,7 +35,8 @@ Steps to reproduce use case:
 - click on "Protected Resources" button
 - you should see "Protected resource" on the page
 
-Use case 2:
+#### Use case 2
+
 Given unauthenticated user
 When ask for protected api resources
 Then unauthorized error page is returned
