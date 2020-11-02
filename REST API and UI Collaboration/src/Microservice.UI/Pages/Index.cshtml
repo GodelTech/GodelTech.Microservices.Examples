@@ -1,0 +1,41 @@
+﻿@page
+@model Microservices.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <h1 class="text-center">GodelTech microservices collaboration example.</h1>
+    <h3 class="text-center">Welcome to user interface</h3>
+    <p>This example describes authentication and authorization process using GodelTech.Microservices libraries.</p>
+    <p>
+        Following libraries were used here:
+        <ul>
+            <li>GodelTech.Microservices.Core</li>
+            <li>GodelTech.Microservices.Security</li>
+            <li>GodelTech.Microservices.Http</li>
+        </ul>
+    </p>
+
+    <h3>Scenarios</h3>
+    <h4>Scenario 1: </h4>
+    <p>If user is not authenticated and tried to get access to protected resource then unauthorized error is shown</p>
+    <p>
+        Steps:
+        <ul>
+            <li>1. Click on "Protected api resource" link</li>
+        </ul>
+        Result: Unauthorized error is shown;
+    </p>
+    <h4>Scenario 2: </h4>
+    <p>If user is authenticated and tried to get access to protected resource then api returns resource</p>
+    Steps:
+    <ul>
+        <li>1. Click on "Login" link</li>
+        <li>2. You will be redirected on identity server for authentication</li>
+        <li>3. Finish authentication process by clicking login button</li>
+        <li>4. You will be redirected on UI</li>
+        <li>5. Click on "Protected api resource" link</li>
+    </ul>
+    Result: Protected resources should be return.
+</div>

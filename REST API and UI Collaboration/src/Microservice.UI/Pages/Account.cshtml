@@ -1,0 +1,14 @@
+﻿@page
+@{
+    @functions{
+        public IActionResult OnGetLogin()
+        {
+            return RedirectToPage("Index");
+        }
+
+        public IActionResult OnGetLogout()
+        {
+            return SignOut("Cookies", "OpenIdConnect");
+        }
+    }
+}
