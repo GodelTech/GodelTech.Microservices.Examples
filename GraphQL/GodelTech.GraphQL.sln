@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodelTech.GraphQL.Web", "GodelTech.GraphQL.Web\GodelTech.GraphQL.Web.csproj", "{B17E6640-2D3F-476E-94B7-D0DDB51A46B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodelTech.GraphQL.Web", "src\GodelTech.GraphQL.Web\GodelTech.GraphQL.Web.csproj", "{B17E6640-2D3F-476E-94B7-D0DDB51A46B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodelTech.GraphQL.BL", "GodelTech.GraphQL.BL\GodelTech.GraphQL.BL.csproj", "{D81476A6-32F6-47E1-A283-735195D88B47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodelTech.GraphQL.BL", "src\GodelTech.GraphQL.BL\GodelTech.GraphQL.BL.csproj", "{D81476A6-32F6-47E1-A283-735195D88B47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
