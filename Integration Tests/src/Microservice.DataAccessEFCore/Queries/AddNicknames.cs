@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microservice.DataAccess.Interfaces;
+using Microservice.DataAccessEFCore.Exceptions;
 using Microservice.DataAccessEFCore.Mappers;
 using Microservice.Domain;
 using Microsoft.EntityFrameworkCore;
@@ -34,7 +35,7 @@ namespace Microservice.DataAccessEFCore.Queries
 
             if (user == null)
             {
-                throw new Exception();
+                throw new UserNotFoundException(userName);
             }
 
             var userNicknames = _context.Nicknames.Where(x => x.Id == user.Id);
