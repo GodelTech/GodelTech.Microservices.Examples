@@ -5,7 +5,7 @@ namespace Microservice.DataAccessEFCore.Exceptions
     public class UserNotFoundException : Exception
     {
         public UserNotFoundException(string userName) 
-            : base($"User { userName } is not found in data base")
+            : base($"User { userName } is not found in database")
         {
         }
     }
