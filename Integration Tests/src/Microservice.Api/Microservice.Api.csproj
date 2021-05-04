@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GodelTech.Microservices.Core" Version="1.4.1" />
+    <PackageReference Include="GodelTech.Microservices.EntityFrameworkCore" Version="1.2.0" />
+    <PackageReference Include="GodelTech.Microservices.Http" Version="1.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Microservice.Application\Microservice.Application.csproj" />
+    <ProjectReference Include="..\Microservice.DataAccess.Interfaces\Microservice.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\Microservice.DataAccessEFCore\Microservice.DataAccessEFCore.csproj" />
+  </ItemGroup>
+
+</Project>
