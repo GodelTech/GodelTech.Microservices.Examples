@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Docker.DotNet" Version="3.125.4" />
     <PackageReference Include="GodelTech.StoryLine" Version="1.0.0" />
     <PackageReference Include="GodelTech.StoryLine.Rest" Version="1.0.0" />
     <PackageReference Include="GodelTech.StoryLine.Wiremock" Version="0.0.1" />
