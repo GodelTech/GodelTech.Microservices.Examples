@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice.Domain", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice.IntegrationTests", "test\Microservice.IntegrationTests\Microservice.IntegrationTests.csproj", "{6A53D45E-0CAD-47B7-B0F9-B489E96E7AA0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice.SubSystemTests", "test\Microservice.SubSystemTests\Microservice.SubSystemTests.csproj", "{79B2B5AD-05F6-4D9B-9922-EB185FC203E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{6A53D45E-0CAD-47B7-B0F9-B489E96E7AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A53D45E-0CAD-47B7-B0F9-B489E96E7AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A53D45E-0CAD-47B7-B0F9-B489E96E7AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B2B5AD-05F6-4D9B-9922-EB185FC203E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B2B5AD-05F6-4D9B-9922-EB185FC203E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B2B5AD-05F6-4D9B-9922-EB185FC203E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B2B5AD-05F6-4D9B-9922-EB185FC203E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

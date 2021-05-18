@@ -29,7 +29,7 @@ namespace Microservice.IntegrationTests.Controllers.Names
         }
 
         [Fact]
-        public async Task WhenPost_AndNicknameServiceIsCalledSuccessfully_ThenNicknamesAreAdded()
+        public async Task WhenPost_AndNicknameServiceReturnsError_ThenNicknamesAreNotAdded()
         {
             const string FirstNickname = "FirstNickname";
             const string ThirdNickname = "ThirdNickname";
@@ -48,7 +48,7 @@ namespace Microservice.IntegrationTests.Controllers.Names
 
             var response = await client.PostAsync("names/add",
                 new StringContent(request, Encoding.UTF8, "application/json"));
-
+            var s = response.Content.ReadAsStream();
             var apiError = await JsonSerializer.DeserializeAsync<ApiError>(response.Content.ReadAsStream());
 
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
