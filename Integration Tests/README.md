@@ -76,7 +76,7 @@ Pulling wiremock image is reduced the time of test execution. Command: docker pu
 
 ## Comparison between Microservice.IntegrationTests and Microservice.SubSystemTests
 
-Microservice.IntegrationTests is used test server, inmemory database and mocked external http calls.
-Microservice.SubSystemTests is used web kestrel\IIS server, inmemory database and real http request to server (Wiremock) with mocks.
+Microservice.IntegrationTests uses test server, inmemory database and mocked external http calls.
+Microservice.SubSystemTests uses web kestrel\IIS server, inmemory database and real http request to server (Wiremock) with mocks.
 
 Microservice.IntegrationTests should be executed faster then Microservice.SubSystemTests and do these tests do not need installed docker on host. On the other hand mocked services can have errors and they can not get 100% that external calls will work as expected. That can lead to unexpected bugs.
