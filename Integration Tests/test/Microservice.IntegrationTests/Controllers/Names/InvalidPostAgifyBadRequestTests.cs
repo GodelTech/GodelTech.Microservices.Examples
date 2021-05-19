@@ -29,7 +29,7 @@ namespace Microservice.IntegrationTests.Controllers.Names
         }
 
         [Fact]
-        public async Task WhenPost_AndNicknameServiceIsCalledSuccessfully_ThenNicknamesAreAdded()
+        public async Task WhenPost_AndNicknameServiceReturnsError_ThenNicknamesAreNotAdded()
         {
             const string FirstNickname = "FirstNickname";
             const string ThirdNickname = "ThirdNickname";
