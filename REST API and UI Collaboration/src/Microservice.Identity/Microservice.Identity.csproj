@@ -10,7 +10,7 @@
     <PackageReference Include="IdentityModel" Version="4.4.0" />
     <PackageReference Include="IdentityServer4" Version="4.1.1" />
     <PackageReference Include="IdentityServer4.Storage" Version="4.1.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
 </Project>
