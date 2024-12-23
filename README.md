@@ -9,5 +9,5 @@ AWS Lambda Function App: Example of an AWS serverless application using GodelTec
 GraphQL: Example of a GraphQL microservice with queries and mutations.
 Integration Tests: Example of integration tests for microservices, including in-memory database and mocked external services.
 
-# License
+## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
